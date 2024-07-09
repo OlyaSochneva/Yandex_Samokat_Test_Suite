@@ -1,5 +1,5 @@
 ## Validation tests project: Yandex Samokat 
-<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" /> <img src="	https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white" /> <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white" />
 
 В этом проекте я взяла учебное приложение Yandex Samokat, в котором можно заполнить форму и оформить заказ. Написала тесты на валидацию полей и ещё на некоторые функциональности, которые мы не трогали во время обучения.
 
