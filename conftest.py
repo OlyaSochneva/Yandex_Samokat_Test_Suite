@@ -6,7 +6,6 @@ from selenium import webdriver
 
 from data import URL
 
-from data import TestUser
 from assistant_methods import order_payload
 
 

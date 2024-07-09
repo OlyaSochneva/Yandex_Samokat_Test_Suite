@@ -43,10 +43,6 @@ class BasePage:
         element = self.return_element(locator)
         return element.get_attribute('value')
 
-    def get_class(self, locator):
-        element = self.return_element(locator)
-        return element.get_attribute('class')
-
     def fill_field(self, locator, text):
         element = self.return_element(locator)
         element.send_keys(text)
