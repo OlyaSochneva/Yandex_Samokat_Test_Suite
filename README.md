@@ -1,10 +1,13 @@
 ## Validation tests project: Yandex Samokat 
+<img src="https://img.shields.io/badge/Python-gray?style=flat" alt="Python" /> <img src="https://img.shields.io/badge/Pytest-gray?style=flat" alt="Pytest" /> <img src="https://img.shields.io/badge/Selenium-gray?style=flat" alt="Selenium" /> <img src="https://img.shields.io/badge/Allure-gray?style=flat" alt="Allure" />
 
 В этом проекте я взяла учебное приложение Yandex Samokat, в котором можно заполнить форму и оформить заказ. Написала тесты на валидацию полей и ещё на некоторые функциональности, которые мы не трогали во время обучения.
 
+Приложение: https://qa-scooter.praktikum-services.ru/
+
 Для тестирования валидации вывела тестовые данные с помощью классов эквивалентности и граничных значений.
 Нашла 19 багов, завела баг-репорты в YouTrack. Таблицу можно посмотреть здесь:  
-
+https://docs.google.com/spreadsheets/d/1qHHQ9G-ho5Iwf2B5WdYUp_jT3wOugODe0AMoLHHsXko/edit?usp=sharing
 
 ### Содержание:
 **locators** - папка с локаторами
