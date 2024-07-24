@@ -168,5 +168,7 @@ class OrderPage(BasePage):
     def check_error_message(self, error_message_sample):
         error_message_locator = self.create_locator(Order.ERROR_MESSAGE_TEMPLATE, error_message_sample)
         if self.check_element_displayed(error_message_locator):
-            return True
+            return "error message"
+        else:
+            return "no error message"
 
