@@ -25,9 +25,9 @@ class BasePage:
 
     def check_page_displayed(self, page_locator):
         if self.check_element_displayed(page_locator):
-            return "page displayed"
+            return "displayed"
         else:
-            return "page not displayed"
+            return "not displayed"
 
     def scroll_to_element(self, locator):
         element = self.return_element(locator)
