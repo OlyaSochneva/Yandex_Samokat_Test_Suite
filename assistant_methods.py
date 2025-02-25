@@ -3,13 +3,6 @@ import string
 from datetime import timedelta, datetime
 
 
-def compare_values(values, sample_values):
-    for key in values.keys():
-        if values[key] != sample_values[key]:
-            return f"Values for '{key}' are different: {values[key]} vs {sample_values[key]}"
-    return "values are the same"
-
-
 def colors_match(actual_rgb, expected_hex):
     expected_rgb = str(hex_to_rgb(expected_hex))
     if expected_rgb in actual_rgb:

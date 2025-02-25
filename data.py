@@ -22,7 +22,6 @@ class ErrorMessage:
 
 
 class BorderColor:
-    BLACK = "#1a1b22"
     ERROR_RED = "#fd6e70"
 
 

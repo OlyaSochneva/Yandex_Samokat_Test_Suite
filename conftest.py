@@ -1,12 +1,20 @@
 import pytest
-import requests
-import json
-
 from selenium import webdriver
 
-from data import URL
+from pages.main_page import MainPage
+from pages.order_page import OrderPage
 
-from assistant_methods import order_payload
+
+@pytest.fixture(scope="function")
+def main_page(request, driver):
+    driver = request.getfixturevalue(driver)
+    return MainPage(driver)
+
+
+@pytest.fixture(scope="function")
+def order_page(request, driver):
+    driver = request.getfixturevalue(driver)
+    return OrderPage(driver)
 
 
 @pytest.fixture(scope="function")
@@ -32,10 +40,3 @@ def firefox():
     driver.quit()
 
 
-@pytest.fixture(scope="function")
-def create_order_and_return_track():
-    payload = json.dumps(order_payload())
-    response = requests.post(URL.ORDER, data=payload)
-    track = str((response.json())["track"])
-    yield track
-    requests.put(URL.CANCEL_ORDER, params={"track": track})

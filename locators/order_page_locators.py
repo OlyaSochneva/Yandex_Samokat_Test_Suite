@@ -24,6 +24,9 @@ class OrderPageLocators:
     # шаблон локатора для сообщений о некорректном вводе:
     ERROR_MESSAGE_TEMPLATE = By.XPATH, '// div[text()="{}"]'
 
+    # шаблон локатора для сообщений об ошибке через локатор поля:
+    ERROR_TEMPLATE = By.XPATH, '{}/following-sibling::div[contains(@class, "Error")]'
+
     # кнопка «Далее» на стр «Для кого самокат»:
     NEXT_BUTTON = By.XPATH, '//button[text()="Далее"]'
 
