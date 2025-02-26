@@ -7,6 +7,15 @@ from data import BorderColor as Color
 
 
 class OrderPage(BasePage):
+    @allure.step("Полное оформление заказа")
+    def create_order_full_flow(self, data):
+        self.fill_all_fields_and_order(data)
+        self.click_element(Order.ORDER_CONFIRM_POPUP_YES_BUTTON)
+
+    @allure.step("Проверяем, что появилось окно «Заказ оформлен»")
+    def check_order_created_popup_displayed(self):
+        return self.check_page_displayed(Order.ORDER_CREATED_POPUP)
+
     @allure.step("Заполняем обе формы + нажимаем «Заказать»")
     def fill_all_fields_and_order(self, data):
         self.first_order_page_fill_fields_and_next(data)
@@ -24,7 +33,7 @@ class OrderPage(BasePage):
 
     @allure.step("Проверяем, что открылось окно подтверждения")
     def check_confirmation_popup_displayed(self):
-        return self.check_page_displayed(Order.ORDER_CHECK_WINDOW_YES_BUTTON)
+        return self.check_page_displayed(Order.ORDER_CONFIRM_POPUP_YES_BUTTON)
 
     @allure.step("Заполняем форму «Для кого самокат» + нажимаем «Далее»")
     def first_order_page_fill_fields_and_next(self, data):

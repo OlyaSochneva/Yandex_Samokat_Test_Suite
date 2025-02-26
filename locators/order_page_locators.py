@@ -37,9 +37,9 @@ class OrderPageLocators:
     ORDER_BUTTON = By.XPATH, '// div[contains(@class, "Order_Buttons")]/child::button[text()="Заказать"]'
 
     # Кнопка «Да» в окне подтверждения заказа:
-    ORDER_CHECK_WINDOW_YES_BUTTON = By.XPATH, '//button[text()="Да"]'
+    ORDER_CONFIRM_POPUP_YES_BUTTON = By.XPATH, '//button[text()="Да"]'
 
     # Окно «Заказ оформлен»:
-    ORDER_CONFIRMED_WINDOW = By.XPATH, '// div[text()="Заказ оформлен"]'
+    ORDER_CREATED_POPUP = By.XPATH, '// div[text()="Заказ оформлен"]'
 
 
